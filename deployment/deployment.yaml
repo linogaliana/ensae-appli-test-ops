@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dvf
-        image: linogaliana/application:v0.0.2
+        image: linogaliana/application:v0.0.3
         ports:
         - containerPort: 8000
         env:
