@@ -25,3 +25,15 @@ spec:
             secretKeyRef:
               name: api-jeton
               key: JETON_API
+        - name: MLFLOW_TRACKING_URI
+          value: "https://user-lgaliana-mlflow.user.lab.sspcloud.fr"
+        - name: MLFLOW_TRACKING_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mlflow-secrets
+              key: MLFLOW_TRACKING_USERNAME
+        - name: MLFLOW_TRACKING_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mlflow-secrets
+              key: MLFLOW_TRACKING_PASSWORD
